@@ -1,5 +1,5 @@
 # hse21_hw1
-### <span style='color:Blue'>Задание 1</span>
+### $\textcolor{red}{Задание 1}$
 1. Создадим символьные ссылки на файлы, чтобы не копировать их:<br>
   ```bash
   ls /usr/share/data-minor-bioinf/assembly/* | xargs -tI{} ln -s {}
