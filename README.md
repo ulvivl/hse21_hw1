@@ -41,8 +41,8 @@
 7. Оцениваем качество подрезанных данных с помощью fastQC:<br>
   Создадим нужные директории:
   ```bash
-    mkdir fastqc_trimmed
-    mkdir multiqc_trimmed
+  mkdir fastqc_trimmed
+  mkdir multiqc_trimmed
   ```
   Сделаем, что нужно:<br>
   ```bash
