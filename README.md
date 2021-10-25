@@ -1,5 +1,5 @@
 # hse21_hw1
-
+### <span style='color:Blue'>Задание 1</span>
 1. Создадим символьные ссылки на файлы, чтобы не копировать их:<br>
   ```bash
   ls /usr/share/data-minor-bioinf/assembly/* | xargs -tI{} ln -s {}
@@ -15,6 +15,48 @@
   seqtk sample -s$SEED oilMP_S4_L001_R1_001.fastq 1500000 > mate_pair_1.fastq<br>
   seqtk sample -s$SEED oilMP_S4_L001_R2_001.fastq 1500000 > mate_pair_2.fastq<br>
   ```
-4. 
-  
-
+4. Оцениваем качество исходных чтений с помощью fastQC:<br>
+  Создадим нужные директории:<br>
+  ```bash
+  mkdir fastqc
+  mkdir multiqc
+  ```
+  Теперь сделаем, что нужно:<br>
+  ```bash
+  ls sub* mate_pair_* | xargs -tI{} fastqc -o fastqc {}
+  ```
+5. Собираем отчёт с помощью multiQC:<br>
+  ```bash
+  multiqc -o multiqc fastqc
+  ```
+6. Подрезаем чтения по качеству:<br>
+  ```bash
+  platanus_trim sub*
+  platanus_internal_trim matep*
+  ```
+6. Удалям исходные .fastq файлы
+  ```bash
+  rm sub*.fastq mate_pair_*.fastq
+  ```
+7. Оцениваем качество подрезанных данных с помощью fastQC:<br>
+  Создадим нужные директории:
+  ```bash
+    mkdir fastqc_trimmed
+    mkdir multiqc_trimmed
+  ```
+  Сделаем, что нужно:<br>
+  ```bash
+  ls sub* matep*| xargs -tI{} fastqc -o fastqc_trimmed {}
+  ```
+7. Собираем отчёт с помощью multiQC:<br>
+  ```bash
+  multiqc -o multiqc_trimmed fastqc_trimmed
+  ```
+8. Собираем контиги из подрезанных чтений с помощью “platanus assemble”:<br>
+  ```bash
+  time platanus assemble -o Poil -f sub1.fastq.trimmed sub2.fastq.trimmed 2> assemble.log
+  ```
+9. Собираем скаффолды из контигов, а также из подрезанных чтений:<br>
+  ```bash
+  time platanus scaffold -o Poil -c Poil_contig.fa -IP1 sub1.fastq.trimmed sub2.fastq.trimmed -OP2 mate_pair_1.fastq.int_trimmed mate_pair_2.fastq.int_trimmed 2> scaffold.log
+  ```
