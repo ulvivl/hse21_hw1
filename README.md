@@ -62,4 +62,6 @@
   ```
 ### Оценка качества
 1. Качество исходных чтений.
-2. 
+<img src="https://github.com/ulvivl/hse21_hw1/blob/main/IMG/General_statistics.png" style="zoom:50%;" />
+![](https://github.com/ulvivl/hse21_hw1/blob/main/IMG/General_statistics.png)
+![](https://github.com/ulvivl/hse21_hw1/blob/main/IMG/Per_sequence_quality.png)
