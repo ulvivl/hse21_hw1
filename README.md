@@ -52,11 +52,11 @@
   ```bash
   multiqc -o multiqc_trimmed fastqc_trimmed
   ```
-8. Собираем контиги из подрезанных чтений с помощью “platanus assemble”:<br>
+8. Собираем контиги с помощью “platanus assemble”:<br>
   ```bash
   time platanus assemble -o Poil -f sub1.fastq.trimmed sub2.fastq.trimmed 2> assemble.log
   ```
-9. Собираем скаффолды из контигов, а также из подрезанных чтений:<br>
+9. Собираем скаффолды:<br>
   ```bash
   time platanus scaffold -o Poil -c Poil_contig.fa -IP1 sub1.fastq.trimmed sub2.fastq.trimmed -OP2 mate_pair_1.fastq.int_trimmed mate_pair_2.fastq.int_trimmed 2> scaffold.log
   ```
