@@ -62,7 +62,7 @@
   ```
 11. Уменьшаем кол-во гэпов с помощью программы “platanus gap_close”:
   ```bash
-  time platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 sub1.fastq.trimmed sub2.fastq.trimmed -OP2 matep1.fastq.int_trimmed matep2.fastq.int_trimmed 2> gapclose.log
+  time platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 sub1.fastq.trimmed sub2.fastq.trimmed -OP2 mate_pair_1.fastq.int_trimmed mate_pair_2.fastq.int_trimmed 2> gapclose.log
   ```
 ### <p align=center> Оценка качества </p>
 #### <p align=center> Качество исходных чтений </p>
