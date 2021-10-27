@@ -1,5 +1,5 @@
 # hse21_hw1
-### Задание 1
+### <p align=center> Задание 1 </p>
 1. Создадим символьные ссылки на файлы, чтобы не копировать их:<br>
   ```bash
   ls /usr/share/data-minor-bioinf/assembly/* | xargs -tI{} ln -s {}
@@ -64,7 +64,7 @@
   ```bash
   time platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 sub1.fastq.trimmed sub2.fastq.trimmed -OP2 matep1.fastq.int_trimmed matep2.fastq.int_trimmed 2> gapclose.log
   ```
-### Оценка качества
+### <p align=center> Оценка качества </p>
 #### <p align=center> Качество исходных чтений </p>
 <img src="https://github.com/ulvivl/hse21_hw1/blob/main/IMG/General_statistics.png" style="zoom:50%;" />
 <img src="https://github.com/ulvivl/hse21_hw1/blob/main/IMG/Per_sequence_quality.png" style="zoom:50%;" />
