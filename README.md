@@ -60,3 +60,6 @@
   ```bash
   time platanus scaffold -o Poil -c Poil_contig.fa -IP1 sub1.fastq.trimmed sub2.fastq.trimmed -OP2 mate_pair_1.fastq.int_trimmed mate_pair_2.fastq.int_trimmed 2> scaffold.log
   ```
+### Оценка качества
+1. Качество исходных чтений.
+2. 
