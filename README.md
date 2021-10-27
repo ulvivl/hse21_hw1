@@ -52,15 +52,15 @@
   ```bash
   multiqc -o multiqc_trimmed fastqc_trimmed
   ```
-9. Собираем контиги с помощью “platanus assemble”:<br>
+10. Собираем контиги с помощью “platanus assemble”:<br>
   ```bash
   time platanus assemble -o Poil -f sub1.fastq.trimmed sub2.fastq.trimmed 2> assemble.log
   ```
-10. Собираем скаффолды:<br>
+11. Собираем скаффолды:<br>
   ```bash
   time platanus scaffold -o Poil -c Poil_contig.fa -IP1 sub1.fastq.trimmed sub2.fastq.trimmed -OP2 mate_pair_1.fastq.int_trimmed mate_pair_2.fastq.int_trimmed 2> scaffold.log
   ```
-11. Уменьшаем кол-во гэпов с помощью программы “platanus gap_close”:
+12. Уменьшаем кол-во гэпов с помощью программы “platanus gap_close”:
   ```bash
   time platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 sub1.fastq.trimmed sub2.fastq.trimmed -OP2 mate_pair_1.fastq.int_trimmed mate_pair_2.fastq.int_trimmed 2> gapclose.log
   ```
