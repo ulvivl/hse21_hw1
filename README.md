@@ -10,10 +10,10 @@
   ```
 3. С помощью команды seqtk выбираем случайно 5 миллионов чтений типа paired-end и 1.5 миллиона чтений типа mate-pairs
   ```bash
-  seqtk sample -s$SEED oil_R1.fastq 5000000 > sub1.fastq<br>
-  seqtk sample -s$SEED oil_R1.fastq 5000000 > sub2.fastq<br>
-  seqtk sample -s$SEED oilMP_S4_L001_R1_001.fastq 1500000 > mate_pair_1.fastq<br>
-  seqtk sample -s$SEED oilMP_S4_L001_R2_001.fastq 1500000 > mate_pair_2.fastq<br>
+  seqtk sample -s$SEED oil_R1.fastq 5000000 > sub1.fastq
+  seqtk sample -s$SEED oil_R1.fastq 5000000 > sub2.fastq
+  seqtk sample -s$SEED oilMP_S4_L001_R1_001.fastq 1500000 > mate_pair_1.fastq
+  seqtk sample -s$SEED oilMP_S4_L001_R2_001.fastq 1500000 > mate_pair_2.fastq
   ```
 4. Оцениваем качество исходных чтений с помощью fastQC:<br>
   Создадим нужные директории:<br>
