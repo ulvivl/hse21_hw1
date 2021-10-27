@@ -73,3 +73,4 @@
 <img src="https://github.com/ulvivl/hse21_hw1/blob/main/IMG/General_statistics2.png" style="zoom:50%;" />
 <img src="https://github.com/ulvivl/hse21_hw1/blob/main/IMG/Per_sequence_quality2.png" style="zoom:50%;" />
 
+`a`
