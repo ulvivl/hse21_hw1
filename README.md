@@ -32,7 +32,7 @@
 6. Подрезаем чтения по качеству:<br>
   ```bash
   platanus_trim sub*
-  platanus_internal_trim matep*
+  platanus_internal_trim mate_pair_*
   ```
 7. Удалям исходные .fastq файлы
   ```bash
@@ -46,9 +46,9 @@
   ```
   Сделаем, что нужно:<br>
   ```bash
-  ls sub* matep*| xargs -tI{} fastqc -o fastqc_trimmed {}
+  ls sub* mate_pair_*| xargs -tI{} fastqc -o fastqc_trimmed {}
   ```
-7. Собираем отчёт с помощью multiQC:<br>
+9. Собираем отчёт с помощью multiQC:<br>
   ```bash
   multiqc -o multiqc_trimmed fastqc_trimmed
   ```
