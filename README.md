@@ -60,6 +60,10 @@
   ```bash
   time platanus scaffold -o Poil -c Poil_contig.fa -IP1 sub1.fastq.trimmed sub2.fastq.trimmed -OP2 mate_pair_1.fastq.int_trimmed mate_pair_2.fastq.int_trimmed 2> scaffold.log
   ```
+10. Уменьшаем кол-во гэпов с помощью программы “platanus gap_close”:
+  ```bash
+  time platanus gap_close -o Poil -c Poil_scaffold.fa -IP1 sub1.fastq.trimmed sub2.fastq.trimmed -OP2 matep1.fastq.int_trimmed matep2.fastq.int_trimmed 2> gapclose.log
+  ```
 ### Оценка качества
 #### <p align=center> Качество исходных чтений </p>
 <img src="https://github.com/ulvivl/hse21_hw1/blob/main/IMG/General_statistics.png" style="zoom:50%;" />
