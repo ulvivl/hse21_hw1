@@ -64,3 +64,7 @@
 1. Качество исходных чтений.
 <img src="https://github.com/ulvivl/hse21_hw1/blob/main/IMG/General_statistics.png" style="zoom:50%;" />
 <img src="https://github.com/ulvivl/hse21_hw1/blob/main/IMG/Per_sequence_quality.png" style="zoom:50%;" />
+2. Качество подрезанных чтений.
+<img src="https://github.com/ulvivl/hse21_hw1/blob/main/IMG/General_statistics2.png" style="zoom:50%;" />
+<img src="https://github.com/ulvivl/hse21_hw1/blob/main/IMG/Per_sequence_quality2.png" style="zoom:50%;" />
+
