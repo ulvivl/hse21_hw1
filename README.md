@@ -61,7 +61,7 @@
   time platanus scaffold -o Poil -c Poil_contig.fa -IP1 sub1.fastq.trimmed sub2.fastq.trimmed -OP2 mate_pair_1.fastq.int_trimmed mate_pair_2.fastq.int_trimmed 2> scaffold.log
   ```
 ### Оценка качества
-#### 1. Качество исходных чтений.
+#### <p align=center> Качество исходных чтений </p>
 <img src="https://github.com/ulvivl/hse21_hw1/blob/main/IMG/General_statistics.png" style="zoom:50%;" />
 <img src="https://github.com/ulvivl/hse21_hw1/blob/main/IMG/Per_sequence_quality.png" style="zoom:50%;" />
 #### 2. Качество подрезанных чтений.
